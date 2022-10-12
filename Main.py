@@ -15,6 +15,7 @@ def quick_sort(data, low, high) -> List[int]:
         pi = parition(data, low, high)
         quick_sort(data, low, pi-1)
         quick_sort(data, pi+1, high)
+    return data
 
 
 input_data = input()
